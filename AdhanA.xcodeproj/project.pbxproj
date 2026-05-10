@@ -6,14 +6,84 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EBE64F3C2FAD3A5A0030E0C9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE64F3B2FAD3A5A0030E0C9 /* WidgetKit.framework */; };
+		EBE64F3E2FAD3A5A0030E0C9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE64F3D2FAD3A5A0030E0C9 /* SwiftUI.framework */; };
+		EBE64F4B2FAD3A5C0030E0C9 /* PrayerTrackerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EBE64F392FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBE64F492FAD3A5C0030E0C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE64EDF2FA9356C0030E0C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE64F382FAD3A5A0030E0C9;
+			remoteInfo = PrayerTrackerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBE64F502FAD3A5C0030E0C9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EBE64F4B2FAD3A5C0030E0C9 /* PrayerTrackerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EBE64EE72FA9356C0030E0C9 /* AdhanA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdhanA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE64F392FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrayerTrackerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE64F3B2FAD3A5A0030E0C9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EBE64F3D2FAD3A5A0030E0C9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EBE64F512FAD3C6F0030E0C9 /* PrayerTrackerWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrayerTrackerWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EBE64F002FA93A8D0030E0C9 /* Exceptions for "AdhanA" folder in "AdhanA" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EBE64EE62FA9356C0030E0C9 /* AdhanA */;
+		};
+		EBE64F4F2FAD3A5C0030E0C9 /* Exceptions for "PrayerTrackerWidget" folder in "PrayerTrackerWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EBE64F382FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension */;
+		};
+		EBE64F582FAD41310030E0C9 /* Exceptions for "AdhanA" folder in "PrayerTrackerWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TogglePrayerIntent.swift,
+			);
+			target = EBE64F382FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EBE64EE92FA9356C0030E0C9 /* AdhanA */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EBE64F002FA93A8D0030E0C9 /* Exceptions for "AdhanA" folder in "AdhanA" target */,
+				EBE64F582FAD41310030E0C9 /* Exceptions for "AdhanA" folder in "PrayerTrackerWidgetExtension" target */,
+			);
 			path = AdhanA;
+			sourceTree = "<group>";
+		};
+		EBE64F3F2FAD3A5A0030E0C9 /* PrayerTrackerWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EBE64F4F2FAD3A5C0030E0C9 /* Exceptions for "PrayerTrackerWidget" folder in "PrayerTrackerWidgetExtension" target */,
+			);
+			path = PrayerTrackerWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +96,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBE64F362FAD3A5A0030E0C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE64F3E2FAD3A5A0030E0C9 /* SwiftUI.framework in Frameworks */,
+				EBE64F3C2FAD3A5A0030E0C9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		EBE64EDE2FA9356C0030E0C9 = {
 			isa = PBXGroup;
 			children = (
+				EBE64F512FAD3C6F0030E0C9 /* PrayerTrackerWidgetExtension.entitlements */,
 				EBE64EE92FA9356C0030E0C9 /* AdhanA */,
+				EBE64F3F2FAD3A5A0030E0C9 /* PrayerTrackerWidget */,
+				EBE64F3A2FAD3A5A0030E0C9 /* Frameworks */,
 				EBE64EE82FA9356C0030E0C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +123,18 @@
 			isa = PBXGroup;
 			children = (
 				EBE64EE72FA9356C0030E0C9 /* AdhanA.app */,
+				EBE64F392FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE64F3A2FAD3A5A0030E0C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBE64F3B2FAD3A5A0030E0C9 /* WidgetKit.framework */,
+				EBE64F3D2FAD3A5A0030E0C9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +147,12 @@
 				EBE64EE32FA9356C0030E0C9 /* Sources */,
 				EBE64EE42FA9356C0030E0C9 /* Frameworks */,
 				EBE64EE52FA9356C0030E0C9 /* Resources */,
+				EBE64F502FAD3A5C0030E0C9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EBE64F4A2FAD3A5C0030E0C9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				EBE64EE92FA9356C0030E0C9 /* AdhanA */,
@@ -69,6 +163,28 @@
 			productName = AdhanA;
 			productReference = EBE64EE72FA9356C0030E0C9 /* AdhanA.app */;
 			productType = "com.apple.product-type.application";
+		};
+		EBE64F382FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE64F4C2FAD3A5C0030E0C9 /* Build configuration list for PBXNativeTarget "PrayerTrackerWidgetExtension" */;
+			buildPhases = (
+				EBE64F352FAD3A5A0030E0C9 /* Sources */,
+				EBE64F362FAD3A5A0030E0C9 /* Frameworks */,
+				EBE64F372FAD3A5A0030E0C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EBE64F3F2FAD3A5A0030E0C9 /* PrayerTrackerWidget */,
+			);
+			name = PrayerTrackerWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = PrayerTrackerWidgetExtension;
+			productReference = EBE64F392FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +197,9 @@
 				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					EBE64EE62FA9356C0030E0C9 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					EBE64F382FAD3A5A0030E0C9 = {
 						CreatedOnToolsVersion = 26.4.1;
 					};
 				};
@@ -100,12 +219,20 @@
 			projectRoot = "";
 			targets = (
 				EBE64EE62FA9356C0030E0C9 /* AdhanA */,
+				EBE64F382FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EBE64EE52FA9356C0030E0C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE64F372FAD3A5A0030E0C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +249,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBE64F352FAD3A5A0030E0C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBE64F4A2FAD3A5C0030E0C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE64F382FAD3A5A0030E0C9 /* PrayerTrackerWidgetExtension */;
+			targetProxy = EBE64F492FAD3A5C0030E0C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EBE64EF02FA9356D0030E0C9 /* Debug */ = {
@@ -251,16 +393,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdhanA/AdhanA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZSW2M8FRUM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdhanA/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to calculate prayer times";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -283,16 +427,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AdhanA/AdhanA.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZSW2M8FRUM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AdhanA/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to calculate prayer times";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +449,68 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBE64F4D2FAD3A5C0030E0C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PrayerTrackerWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZSW2M8FRUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrayerTrackerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PrayerTrackerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabrayilqulamzada.AdhanA.PrayerTrackerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBE64F4E2FAD3A5C0030E0C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PrayerTrackerWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZSW2M8FRUM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrayerTrackerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PrayerTrackerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cabrayilqulamzada.AdhanA.PrayerTrackerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +535,15 @@
 			buildConfigurations = (
 				EBE64EF32FA9356D0030E0C9 /* Debug */,
 				EBE64EF42FA9356D0030E0C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE64F4C2FAD3A5C0030E0C9 /* Build configuration list for PBXNativeTarget "PrayerTrackerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE64F4D2FAD3A5C0030E0C9 /* Debug */,
+				EBE64F4E2FAD3A5C0030E0C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
